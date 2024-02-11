@@ -1,0 +1,27 @@
+.container {
+    margin-top: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 28px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 10px 60px;
+}
+
+th {
+    background: #000;
+    color: white;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #9c9999;
+}

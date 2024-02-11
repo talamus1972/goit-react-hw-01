@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.image {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.online {
+    font-size: 22px;
+}
