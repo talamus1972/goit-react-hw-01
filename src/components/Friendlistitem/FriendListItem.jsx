@@ -1,21 +1,21 @@
 import css from "./FriendListItem.module.css";
 
 
-export const FriendListItem = ({ friend }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div className={css.card}>
       <img
         className={css.image}
-        src={friend.avatar}
+        src={avatar}
         alt="Avatar"
         width="48"
       />
-      <p className={css.name}>{friend.name}</p>
+      <p className={css.name}>{name}</p>
       <p
         className={css.online}
-        style={{ color: friend.isOnline ? 'green' : 'red' }}
+        style={{ color: isOnline ? 'green' : 'red' }}
       >
-        {friend.isOnline ? 'Online' : 'Offline'}
+        {isOnline ? 'Online' : 'Offline'}
       </p>
     </div>
   );
